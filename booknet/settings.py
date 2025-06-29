@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'comentarios',
     'recomendaciones',
 ]
+AUTH_USER_MODEL = 'usuarios.Usuario'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (

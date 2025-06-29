@@ -30,7 +30,3 @@ class Libro(models.Model):
     genero = models.ForeignKey(Genero, on_delete=models.CASCADE)
     fecha_publicacion = models.DateField()
     portada_url = models. TextField()
-
-    def __str__(self):
-        return self.titulo
-    

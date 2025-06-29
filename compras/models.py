@@ -8,6 +8,3 @@ class Compra(models.Model):
     libro = models.ForeignKey(Libro, on_delete=models.CASCADE)
     fecha_compra = models.DateTimeField(auto_now_add=True)
     cantidad = models.PositiveIntegerField(default=1)
-
-    def __str__(self):
-        return f"{self.usuario.username} - {self.libro.titulo} - {self.fecha_compra}"

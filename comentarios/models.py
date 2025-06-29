@@ -15,5 +15,3 @@ class Calificacion(models.Model):
     libro = models.ForeignKey(Libro, on_delete=models.CASCADE)
     calificacion = models.IntegerField()  # Asumiendo que la calificación es un número entero
     fecha_creacion = models.DateTimeField(auto_now_add=True)
-
-  
